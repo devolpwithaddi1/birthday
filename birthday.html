@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday 🎉</title>
+  <style>
+    body {
+      text-align: center;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #333;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3em;
+      color: #ff4081;
+    }
+    .balloons {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+    .cake {
+      font-size: 2em;
+      margin: 30px 0;
+    }
+    .message {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+    button {
+      background: #ff4081;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday, <span id="name">Friend</span>! 🎉</h1>
+
+  <div class="balloons">🎈🎈🎈 🎉 🎈🎈🎈</div>
+  
+  <div class="cake">🎂 🍰 🧁</div>
+
+  <div class="message">
+    <p>Wishing you the happiest <span id="age">??</span>th Birthday! 🥳</p>
+    <p>May your day be full of joy, laughter, and sweet memories 💖✨</p>
+  </div>
+
+  <button onclick="playMusic()">🎶 Play Birthday Song</button>
+  
+  <audio id="song" src="https://www.youtube.com/watch?v=YMeMFUdZM8E"></audio>
+
+  <script>
+    // You can change the name and age here 👇
+    document.getElementById("name").innerText = "Linmark";
+    document.getElementById("age").innerText = "21";
+
+    function playMusic() {
+      document.getElementById("song").play();
+    }
+  </script>
+</body>
+</html>
